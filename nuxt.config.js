@@ -18,6 +18,10 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Global CSS
+  */
+  css: ['~assets/css/main.css', 'tachyons/css/tachyons.css'],
+  /*
   ** Build configuration
   */
   build: {
