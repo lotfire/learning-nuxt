@@ -1,8 +1,8 @@
 <template>
-    <div>
-     <button @click="decrement">-</button>
-     {{counter}}
-     <button @click="increment">+</button>
+    <div class="pa4">
+      <ul>
+        <li v-for="todo in todos" :key="todo.id"> {{todo.task}} </li>
+      </ul>
     </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     ...mapState({
-      counter: state => state.counter // merging counter from the state into computed
+      todos: state => state.todos // merging counter from the state into computed
     })
   },
   methods: {
